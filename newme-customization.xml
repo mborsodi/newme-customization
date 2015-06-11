@@ -38,6 +38,9 @@
         <moduleRef key="MEI.performance"/>
         
         
+        <!--<!-\-Add neume to meta data-\->
+        <elementSpec ident=""-->
+        
         <!-- Remove dur attribute -->
         <classSpec ident="att.duration.musical" module="MEI.shared" type="atts" mode="delete"/>
         
@@ -72,6 +75,30 @@
             <memberOf key="att.newmes.neume"/>
             <memberOf key="model.eventLike"/>
           </classes>
+          <attList>
+            <attDef ident="cont" usage="opt">
+              <gloss>Neume contour</gloss>
+              <desc>
+                Contour
+              </desc>
+              <valList type="closed">
+                <valItem ident="N"/>
+                <valItem ident="NH"/>
+              </valList>
+            </attDef>
+            <attDef ident="connect" usage="opt">
+              <valList type="closed">
+                <valItem ident="l"/>
+                <valItem ident="n"/>
+              </valList> 
+            </attDef>
+            <attDef ident="name" usage="opt">
+              <valList type="open">
+                <valItem ident="N"/>
+                <valItem ident="NH"/>
+              </valList>
+            </attDef>
+          </attList>
           <constraintSpec ident="neume_attributes"
             scheme="isoschematron">
             <constraint>
@@ -79,16 +106,17 @@
                 <sch:rule context="mei:neume">
                   <sch:assert test="not(@cont) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
                   <sch:assert test="not(@connect) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
+                  <sch:assert test="@name or @cont or @connect">Must have both @cont and @connect and/or @name</sch:assert>
                 </sch:rule>
               </sch:pattern>
             </constraint>
           </constraintSpec>
           <content>
-            <rng:oneOrMore>
+            <rng:zeroOrMore>
               <rng:choice>
                 <rng:ref name="note"/>
               </rng:choice>
-            </rng:oneOrMore>
+            </rng:zeroOrMore>
           </content>
         </elementSpec>
         
@@ -124,11 +152,6 @@
             <memberOf key="att.common"/>
             <memberOf key="att.facsimile"/>
             <memberOf key="att.typed"/>
-            <memberOf key="att.newmes.neume.log"/>
-            <memberOf key="att.newmes.neume.vis"/>
-            <memberOf key="att.newmes.neume.ges"/>
-            <memberOf key="att.newmes.neume.anl"/>
-            <memberOf key="att.newmes.neume"/>
             <memberOf key="model.eventLike"/>
           </classes>
           <content>
@@ -139,35 +162,6 @@
             </rng:oneOrMore>
           </content>
         </elementSpec>
-        
-        
-        <!--Add neume attributes-->
-        <classSpec ident="att.newmes.neume" module="MEI.newmes" type="atts" mode="add">
-          <attList>
-            <attDef ident="cont" usage="opt">
-              <gloss>Neume contour</gloss>
-              <desc>
-                Contour
-              </desc>
-              <valList type="closed">
-                <valItem ident="N"/>
-                <valItem ident="NH"/>
-              </valList>
-            </attDef>
-            <attDef ident="connect" usage="opt">
-              <valList>
-                <valItem ident="l"/>
-                <valItem ident="n"/>
-              </valList> 
-            </attDef>
-            <attDef ident="name" usage="opt">
-              <valList type="open">
-                <valItem ident="N"/>
-                <valItem ident="NH"/>
-              </valList>
-            </attDef>
-          </attList>
-        </classSpec>
         
         
         <!--Remove chords and rests-->
