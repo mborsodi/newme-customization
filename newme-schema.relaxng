@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.music-encoding.org/ns/mei"><!--
-Schema generated from ODD source 2015-06-11T15:02:11Z. .
+Schema generated from ODD source 2015-06-11T18:01:55Z. .
 TEI Edition: 2013 Release
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -2279,9 +2279,8 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                context="mei:newmes">
-                    <sch:assert test="(@pname=&#34;b&#34; and @accid)">accid only possible on b</sch:assert>
-                    <sch:report test="not(@pname=&#34;b&#34;) and @accid"/>
+                context="mei:note">
+                    <sch:report test="not(@pname='b') and @accid">accidentals can only be placed on the note b</sch:report>
                   </sch:rule>
    </pattern>
    <define name="att.accidental.performed.attributes">
@@ -3815,12 +3814,10 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <ref name="att.pitch.attribute.pname"/>
    </define>
    <define name="att.pitch.attribute.pname">
-      <optional>
-         <attribute name="pname">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a written pitch name.</a:documentation>
-            <ref name="data.PITCHNAME"/>
-         </attribute>
-      </optional>
+      <attribute name="pname">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a written pitch name.</a:documentation>
+         <ref name="data.PITCHNAME"/>
+      </attribute>
    </define>
    <define name="att.pitched.attributes">
       <ref name="att.pitch.attributes"/>
@@ -9594,20 +9591,76 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
    <define name="neume">
       <element name="neume">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume) Identifies a neume and its properties, including text, pitch, contour and name. </a:documentation>
-         <oneOrMore>
+         <zeroOrMore>
             <ref name="note"/>
-         </oneOrMore>
+         </zeroOrMore>
          <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron">
                 <sch:rule context="mei:neume">
-                  <sch:assert test="(@cont and @connect) or @name">Must have both cont and connect or name</sch:assert>
+                  <sch:assert test="not(@cont) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
+                  <sch:assert test="not(@connect) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
+                  <sch:assert test="@name or @cont or @connect">Must have both @cont and @connect and/or @name</sch:assert>
                 </sch:rule>
               </sch:pattern>
          <ref name="att.common.attributes"/>
          <ref name="att.facsimile.attributes"/>
          <ref name="att.typed.attributes"/>
-         <ref name="att.newmes.neume.attributes"/>
+         <optional>
+            <attribute name="cont">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume contour) Contour </a:documentation>
+               <choice>
+                  <value>N</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>NH</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="connect">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume connectivity) connectivity </a:documentation>
+               <choice>
+                  <value>l</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>n</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="name">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume name) name </a:documentation>
+               <choice>
+                  <value>punctum</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>virga</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>pes</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>clivis</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>torculus</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>torculusresupinus</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>porrectus</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>porrectusflexus</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>apostropha</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>oriscus</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>pressusmaior</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>pressusminor</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>virgastrata</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -9620,44 +9673,25 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.common.attributes"/>
          <ref name="att.facsimile.attributes"/>
          <ref name="att.typed.attributes"/>
-         <ref name="att.newmes.neume.attributes"/>
+         <attribute name="syl">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(syllable text) text </a:documentation>
+            <text/>
+         </attribute>
+         <optional>
+            <attribute name="pos">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>i</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>m</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>t</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
-   </define>
-   <define name="att.newmes.neume.attributes">
-      <ref name="att.newmes.neume.attribute.cont"/>
-      <ref name="att.newmes.neume.attribute.connect"/>
-      <ref name="att.newmes.neume.attribute.name"/>
-   </define>
-   <define name="att.newmes.neume.attribute.cont">
-      <optional>
-         <attribute name="cont">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume contour) Contour </a:documentation>
-            <choice>
-               <value>N</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               <value>NH</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            </choice>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.newmes.neume.attribute.connect">
-      <optional>
-         <attribute name="connect">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-            <text/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.newmes.neume.attribute.name">
-      <optional>
-         <attribute name="name">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
-Sample values include: 1] N; 2] NH</a:documentation>
-            <text/>
-         </attribute>
-      </optional>
    </define>
    <start>
       <choice>
