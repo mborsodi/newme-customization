@@ -87,15 +87,34 @@
               </valList>
             </attDef>
             <attDef ident="connect" usage="opt">
+              <gloss>Neume connectivity</gloss>
+              <desc>
+                connectivity
+              </desc>
               <valList type="closed">
                 <valItem ident="l"/>
                 <valItem ident="n"/>
               </valList> 
             </attDef>
             <attDef ident="name" usage="opt">
-              <valList type="open">
-                <valItem ident="N"/>
-                <valItem ident="NH"/>
+              <gloss>Neume name</gloss>
+              <desc>
+                name
+              </desc>
+              <valList type="closed">
+                <valItem ident="punctum"/>
+                <valItem ident="virga"/>
+                <valItem ident="pes"/>
+                <valItem ident="clivis"/>
+                <valItem ident="torculus"/>
+                <valItem ident="torculusresupinus"/>
+                <valItem ident="porrectus"/>
+                <valItem ident="porrectusflexus"/>
+                <valItem ident="apostropha"/>
+                <valItem ident="oriscus"/>
+                <valItem ident="pressusmaior"/>
+                <valItem ident="pressusminor"/>
+                <valItem ident="virgastrata"/>
               </valList>
             </attDef>
           </attList>
