@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Music Encoding Initiative Guidelines: <title type="sub">Newmes
+          Customization</title></title>
+      </titleStmt>
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <p/>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <divGen type="toc"/>
+    </front>
+    <body>
+      <schemaSpec ident="mei" ns="http://www.music-encoding.org/ns/mei" start="mei meiHead meiCorpus
+        music">
+        
+        <moduleRef key="MEI"/>
+        <moduleRef key="MEI.header"/>
+        <moduleRef key="MEI.shared"/>
+        <moduleRef key="MEI.corpus"/>
+        <moduleRef key="MEI.critapp"/>
+        <moduleRef key="MEI.facsimile"/>
+        <moduleRef key="MEI.edittrans"/>
+        <moduleRef key="MEI.figtable"/>
+        <moduleRef key="MEI.namesdates"/>
+        <moduleRef key="MEI.analysis"/>
+        <moduleRef key="MEI.text"/>
+        <moduleRef key="MEI.lyrics"/>
+        <moduleRef key="MEI.performance"/>
+        
+        
+        <!-- Remove dur attribute -->
+        <classSpec ident="att.duration.musical" module="MEI.shared" type="atts" mode="delete"/>
+        
+        
+        <!-- Remove key attribute -->
+        <classSpec ident="att.keySigDefault.log" module="MEI.shared" type="atts" mode="delete"/>
+        <classSpec ident="att.keyModeDefault.log" module="MEI.shared" type="atts" mode="delete"/>
+        
+        
+        <!-- Make staffdef optional -->
+        <!--<classSpec ident="model.eventLike" module="MEI.shared" type="model" mode="replace"/>-->
+        
+        
+        <!-- Define the new module -->
+        <moduleSpec ident="MEI.newmes"/>
+        
+        
+        <!--Create neume element-->
+        <elementSpec ident="neume" module="MEI.newmes" mode="add">
+          <gloss>Neume</gloss>
+          <desc>
+            Identifies a neume and its properties, including text, pitch, contour and name.
+          </desc>
+          <classes>
+            <memberOf key="att.common"/>
+            <memberOf key="att.facsimile"/>
+            <memberOf key="att.typed"/>
+            <memberOf key="att.newmes.neume.log"/>
+            <memberOf key="att.newmes.neume.vis"/>
+            <memberOf key="att.newmes.neume.ges"/>
+            <memberOf key="att.newmes.neume.anl"/>
+            <memberOf key="att.newmes.neume"/>
+            <memberOf key="model.eventLike"/>
+          </classes>
+          <constraintSpec ident="neume_names_or_descriptions_required"
+            scheme="isoschematron">
+            <constraint>
+              <sch:pattern>
+                <sch:rule context="mei:neume">
+                  <sch:assert test="(@cont and @connect) or @name">Must have both cont and connect or name</sch:assert>
+                </sch:rule>
+              </sch:pattern>
+            </constraint>
+          </constraintSpec>
+          <content>
+            <rng:oneOrMore>
+              <rng:choice>
+                <rng:ref name="note"/>
+              </rng:choice>
+            </rng:oneOrMore>
+          </content>
+        </elementSpec>
+        
+        
+        <!--Change accidental-->
+        <classSpec ident="att.accidental" module="MEI.shared" type="atts" mode="replace">
+          <desc>Attributes for capturing momentary pitch inflection.</desc>
+          <attList>
+            <attDef ident="accid" usage="opt">
+              <desc>captures a written accidental.</desc>
+              <datatype>
+                <rng:ref name="data.ACCIDENTAL.EXPLICIT"/>
+              </datatype>
+              <valList type="closed">
+                <valItem ident="f"/>
+              </valList>
+              <constraintSpec ident="accid_on_b_only"
+                scheme="isoschematron">
+                <constraint>
+                  <sch:rule context="mei:newmes">
+                    <sch:assert test='(@pname="b" and @accid)'>accid only possible on b</sch:assert>
+                    <sch:report test='not(@pname="b") and @accid'/>
+                  </sch:rule>
+                </constraint>
+              </constraintSpec>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        
+        <!--Add syllable element-->
+        <elementSpec ident="syllable" module="MEI.newmes" mode="add">
+          <classes>
+            <memberOf key="att.common"/>
+            <memberOf key="att.facsimile"/>
+            <memberOf key="att.typed"/>
+            <memberOf key="att.newmes.neume.log"/>
+            <memberOf key="att.newmes.neume.vis"/>
+            <memberOf key="att.newmes.neume.ges"/>
+            <memberOf key="att.newmes.neume.anl"/>
+            <memberOf key="att.newmes.neume"/>
+            <memberOf key="model.eventLike"/>
+          </classes>
+          <content>
+            <rng:oneOrMore>
+              <rng:choice>
+                <rng:ref name="neume"/>
+              </rng:choice>
+            </rng:oneOrMore>
+          </content>
+        </elementSpec>
+        
+        
+        <!--Add neume attributes-->
+        <classSpec ident="att.newmes.neume" module="MEI.newmes" type="atts" mode="add">
+          <attList>
+            <attDef ident="cont" usage="opt">
+              <gloss>Neume contour</gloss>
+              <desc>
+                Contour
+              </desc>
+              <valList type="closed">
+                <valItem ident="N"/>
+                <valItem ident="NH"/>
+              </valList>
+            </attDef>
+            <attDef ident="connect" usage="opt">
+              <valList>
+                <valItem ident="l"/>
+                <valItem ident="n"/>
+              </valList> 
+            </attDef>
+            <attDef ident="name" usage="opt">
+              <valList type="open">
+                <valItem ident="N"/>
+                <valItem ident="NH"/>
+              </valList>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        
+        <!--Remove chords and rests-->
+        <elementSpec ident="chord" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="rest" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="barLine" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="keySig" module="MEI.shared" mode="delete"/>
+        
+        
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </schemaSpec>
+    </body>
+  </text>
+</TEI>
