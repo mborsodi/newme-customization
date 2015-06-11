@@ -41,14 +41,6 @@
         <!--<!-\-Add neume to meta data-\->
         <elementSpec ident=""-->
         
-        <!-- Remove dur attribute -->
-        <classSpec ident="att.duration.musical" module="MEI.shared" type="atts" mode="delete"/>
-        
-        
-        <!-- Remove key attribute -->
-        <classSpec ident="att.keySigDefault.log" module="MEI.shared" type="atts" mode="delete"/>
-        <classSpec ident="att.keyModeDefault.log" module="MEI.shared" type="atts" mode="delete"/>
-        
         
         <!-- Make staffdef optional -->
         <!--<classSpec ident="model.eventLike" module="MEI.shared" type="model" mode="replace"/>-->
@@ -173,6 +165,21 @@
             <memberOf key="att.typed"/>
             <memberOf key="model.eventLike"/>
           </classes>
+          <attList>
+            <attDef ident="syl" usage="req">
+              <gloss>syllable text</gloss>
+              <desc>
+                text
+              </desc>
+            </attDef>
+            <attDef ident="pos" usage="rec">
+              <valList type="closed">
+                <valItem ident="i"/>
+                <valItem ident="m"/>
+                <valItem ident="t"/>
+              </valList>
+            </attDef>
+          </attList>
           <content>
             <rng:oneOrMore>
               <rng:choice>
@@ -189,17 +196,14 @@
         <elementSpec ident="barLine" module="MEI.shared" mode="delete"/>
         <elementSpec ident="keySig" module="MEI.shared" mode="delete"/>
         
-        
-                
-        
-        
+        <!-- Remove dur attribute -->
+        <classSpec ident="att.duration.musical" module="MEI.shared" type="atts" mode="delete"/>
         
         
-        
-        
-        
-        
-        
+        <!-- Remove key attribute -->
+        <classSpec ident="att.keySigDefault.log" module="MEI.shared" type="atts" mode="delete"/>
+        <classSpec ident="att.keyModeDefault.log" module="MEI.shared" type="atts" mode="delete"/>
+
         
         
       </schemaSpec>
