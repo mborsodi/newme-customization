@@ -157,6 +157,20 @@
         </classSpec>
         
         
+        <!--Pitch required-->
+        <classSpec ident="att.pitch" module="MEI.shared" type="atts" mode="replace">
+          <desc>Attributes that record written pitch name.</desc>
+          <attList>
+            <attDef ident="pname" usage="req">
+              <desc>contains a written pitch name.</desc>
+              <datatype>
+                <rng:ref name="data.PITCHNAME"/>
+              </datatype>
+            </attDef>
+          </attList>
+        </classSpec>
+        
+        
         <!--Add syllable element-->
         <elementSpec ident="syllable" module="MEI.newmes" mode="add">
           <classes>
