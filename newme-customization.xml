@@ -93,7 +93,7 @@
         </elementSpec>
         
         
-        <!--<!-\-Change accidental-\->
+        <!--Change accidental-->
         <classSpec ident="att.accidental" module="MEI.shared" type="atts" mode="replace">
           <desc>Attributes for capturing momentary pitch inflection.</desc>
           <attList>
@@ -108,15 +108,14 @@
               <constraintSpec ident="accid_on_b_only"
                 scheme="isoschematron">
                 <constraint>
-                  <sch:rule context="mei:newmes">
-                    <sch:assert test='(@pname="b" and @accid)'>accid only possible on b</sch:assert>
-                    <sch:report test='not(@pname="b") and @accid'/>
+                  <sch:rule context="mei:note">
+                    <sch:report test="not(@pname='b') and @accid">accidentals can only be placed on the note b</sch:report>
                   </sch:rule>
                 </constraint>
               </constraintSpec>
             </attDef>
           </attList>
-        </classSpec>-->
+        </classSpec>
         
         
         <!--Add syllable element-->
