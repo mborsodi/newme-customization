@@ -72,12 +72,13 @@
             <memberOf key="att.newmes.neume"/>
             <memberOf key="model.eventLike"/>
           </classes>
-          <constraintSpec ident="neume_names_or_descriptions_required"
+          <constraintSpec ident="neume_attributes"
             scheme="isoschematron">
             <constraint>
               <sch:pattern>
                 <sch:rule context="mei:neume">
-                  <sch:assert test="(@cont and @connect) or @name">Must have both cont and connect or name</sch:assert>
+                  <sch:assert test="not(@cont) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
+                  <sch:assert test="not(@connect) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
                 </sch:rule>
               </sch:pattern>
             </constraint>
@@ -92,7 +93,7 @@
         </elementSpec>
         
         
-        <!--Change accidental-->
+        <!--<!-\-Change accidental-\->
         <classSpec ident="att.accidental" module="MEI.shared" type="atts" mode="replace">
           <desc>Attributes for capturing momentary pitch inflection.</desc>
           <attList>
@@ -115,7 +116,7 @@
               </constraintSpec>
             </attDef>
           </attList>
-        </classSpec>
+        </classSpec>-->
         
         
         <!--Add syllable element-->
