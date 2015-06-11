@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Neume-test</title>
+            </titleStmt>
+            <pubStmt>
+                <respStmt>
+                    <corpName>DDMAL</corpName>
+                </respStmt>
+            </pubStmt>
+        </fileDesc>
+    </meiHead>
+<music>
+    <body>
+        <mdiv>
+            <score>
+                <scoreDef>
+                    <staffGrp>
+                        <staffDef clef.shape="C" clef.line="1" lines="4" n="1" xml:id="sd1"/>
+                    </staffGrp>
+                </scoreDef>
+                <section>
+                    <staff>
+                        <layer>
+                            <syllable syl="la" pos="i">
+                                <neume cont="N" connect="l">
+                                    <note pname="b" accid="f"/>
+                                </neume>
+                                <neume cont="NH" connect="n">
+                                    <note pname="e"/>
+                                    <note pname="f"/>
+                                </neume>
+                                <neume name="punctum"/>
+                            </syllable>
+                            <syllable syl="ha" pos="t">
+                                <neume cont="NH" connect="l">
+                                    <note pname="a"/>
+                                    <note pname="c"/>
+                                </neume>
+                                <neume cont="NH" connect="n">
+                                    <note pname="e"/>
+                                    <note pname="f"/>
+                                </neume>
+                                <neume name="punctum"/>
+                            </syllable>
+                            <neume name="virga"/>
+                        </layer>
+                    </staff>
+                </section>
+            </score>
+        </mdiv>
+    </body>
+</music>
+</mei>
+
