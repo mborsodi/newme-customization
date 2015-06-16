@@ -218,6 +218,18 @@
         <classSpec ident="att.keySigDefault.log" module="MEI.shared" type="atts" mode="delete"/>
         <classSpec ident="att.keyModeDefault.log" module="MEI.shared" type="atts" mode="delete"/>
 
+        <!--Change types of articulation-->
+        <macroSpec ident="data.ARTICULATION" module="MEI" type="dt" mode="replace">
+          <desc>Neume articulations</desc>
+          <content>
+            <rng:choice>
+              <rng:value>episema-above</rng:value>
+              <rng:value>episema-below</rng:value>
+              <rng:value>mora</rng:value>
+            </rng:choice>
+          </content>
+        </macroSpec>
+        
         
         
       </schemaSpec>
