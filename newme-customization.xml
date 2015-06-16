@@ -218,6 +218,26 @@
         <classSpec ident="att.keySigDefault.log" module="MEI.shared" type="atts" mode="delete"/>
         <classSpec ident="att.keyModeDefault.log" module="MEI.shared" type="atts" mode="delete"/>
 
+        <!--Add neume names-->
+        <macroSpec ident="data.NEUMENAMES" module="MEI.newmes" type="dt" mode="add">
+          <desc>Possible neume names</desc>
+          <content>
+            <rng:choice>
+              <rng:value>punctum</rng:value>
+              <rng:value>virga</rng:value>
+              <rng:value>pes</rng:value>
+              <rng:value>clivis</rng:value>
+              <rng:value>torculus</rng:value>
+              <rng:value>oriscus</rng:value>
+              <rng:value>apostropha</rng:value>
+              <rng:value>climacus</rng:value>
+              <rng:value>scandicus</rng:value>
+              <rng:value>torculus</rng:value>
+            </rng:choice>
+          </content>
+        </macroSpec>
+        
+        
         <!--Change types of articulation-->
         <macroSpec ident="data.ARTICULATION" module="MEI" type="dt" mode="replace">
           <desc>Neume articulations</desc>
