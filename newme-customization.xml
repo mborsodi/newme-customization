@@ -157,6 +157,23 @@
         </classSpec>
         
         
+        <!--Add connection to note-->
+        <elementSpec ident="note" module="MEI.shared" mode="change">
+          <attList>
+            <attDef ident="connection" usage="rec">
+              <gloss>connections</gloss>
+              <desc>
+                connects
+              </desc>
+              <valList type="semi">
+                <valItem ident="nl"/>
+                <valItem ident="l"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        
         <!--Pitch required-->
         <classSpec ident="att.pitch" module="MEI.shared" type="atts" mode="replace">
           <desc>Attributes that record written pitch name.</desc>
