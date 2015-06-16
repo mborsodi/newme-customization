@@ -138,22 +138,18 @@
           <attList>
             <attDef ident="accid" usage="opt">
               <desc>captures a written accidental.</desc>
-              <datatype>
-                <rng:ref name="data.ACCIDENTAL.EXPLICIT"/>
-              </datatype>
               <valList type="closed">
                 <valItem ident="f"/>
               </valList>
-              <constraintSpec ident="accid_on_b_only"
-                scheme="isoschematron">
-                <constraint>
-                  <sch:rule context="mei:note">
-                    <sch:report test="not(@pname='b') and @accid">accidentals can only be placed on the note b</sch:report>
-                  </sch:rule>
-                </constraint>
-              </constraintSpec>
             </attDef>
           </attList>
+          <constraintSpec ident="accid_on_b_only" scheme="isoschematron">
+            <constraint>
+              <sch:rule context="mei:note">
+                <sch:report test="not(@pname='b') and @accid">accidentals can only be placed on the note b</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
         </classSpec>
         
         
