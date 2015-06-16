@@ -3,7 +3,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.music-encoding.org/ns/mei"><!--
-Schema generated from ODD source 2015-06-11T18:01:55Z. .
+Schema generated from ODD source 2015-06-16T12:31:08Z. .
 TEI Edition: 2013 Release
 TEI Edition Location: http://www.tei-c.org/Vault/P5//
   
@@ -35,75 +35,9 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    </define>
    <define name="data.ARTICULATION">
       <choice>
-         <value>acc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">accent (Unicode 1D17B)</a:documentation>
-         <value>stacc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">staccato (Unicode 1D17C)</a:documentation>
-         <value>ten</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">tenuto (Unicode 1D17D)</a:documentation>
-         <value>stacciss</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">staccatissimo (Unicode 1D17E)</a:documentation>
-         <value>marc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marcato (Unicode 1D17F)</a:documentation>
-         <value>marc-stacc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marcato + staccato (Unicode 1D180)</a:documentation>
-         <value>spicc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">spiccato</a:documentation>
-         <value>doit</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">main note followed by short slide to higher, indeterminate pitch (Unicode
-            1D185)</a:documentation>
-         <value>rip</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">main note preceded by short slide from lower, indeterminate pitch
-            (Unicode 1D186)</a:documentation>
-         <value>plop</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">main note preceded by "slide" from higher, indeterminate
-            pitch</a:documentation>
-         <value>fall</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">main note followed by long "slide" to lower, indeterminate
-            pitch</a:documentation>
-         <value>bend</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">"lip slur" to lower pitch, then return to written pitch</a:documentation>
-         <value>flip</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">main note followed by quick upward rise, then descent in pitch (Unicode
-            1D187)</a:documentation>
-         <value>smear</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Unicode 1D188)</a:documentation>
-         <value>dnbow</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">down bow (Unicode 1D1AA)</a:documentation>
-         <value>upbow</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">up bow (Unicode 1D1AB)</a:documentation>
-         <value>harm</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">harmonic (Unicode 1D1AC)</a:documentation>
-         <value>snap</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">snap pizzicato (Unicode 1D1AD)</a:documentation>
-         <value>fingernail</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">fingernail (Unicode 1D1B3)</a:documentation>
-         <value>ten-stacc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">tenuto + staccato (Unicode 1D182)</a:documentation>
-         <value>damp</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dampen harp string (Unicode 1D1B4)</a:documentation>
-         <value>dampall</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dampen all harp strings (Unicode 1D1B5)</a:documentation>
-         <value>open</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">full (as opposed to stopped) tone</a:documentation>
-         <value>stop</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">"muffled" tone</a:documentation>
-         <value>dbltongue</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">double tongue (Unicode 1D18A)</a:documentation>
-         <value>trpltongue</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">triple tongue (Unicode 1D18B)</a:documentation>
-         <value>heel</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">use heel (organ pedal)</a:documentation>
-         <value>toe</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">use toe (organ pedal)</a:documentation>
-         <value>tap</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">percussive effect on guitar string(s)</a:documentation>
-         <value>lhpizz</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">left-hand pizzicato</a:documentation>
-         <value>dot</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">uninterpreted dot</a:documentation>
-         <value>stroke</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">uninterpreted stroke</a:documentation>
+         <value>episema-above</value>
+         <value>episema-below</value>
+         <value>mora</value>
       </choice>
    </define>
    <define name="data.ARTICULATIONS">
@@ -152,19 +86,8 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    </define>
    <define name="data.CLEFSHAPE">
       <choice>
-         <value>G</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">G clef (Unicode 1D11E)</a:documentation>
-         <value>GG</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Double G clef</a:documentation>
          <value>F</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">F clef (Unicode 1D122)</a:documentation>
          <value>C</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">C clef (Unicode 1D121)</a:documentation>
-         <value>perc</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Drum clef (Unicode 1D125 or Unicode 1D126)</a:documentation>
-         <value>TAB</value>
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">tablature "clef"; i.e. usually "TAB" rendered
-            vertically</a:documentation>
       </choice>
    </define>
    <define name="data.COLOR">
@@ -481,18 +404,6 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">cut time; i.e. 2/2</a:documentation>
       </choice>
    </define>
-   <define name="data.MODE">
-      <choice>
-         <value>major</value>
-         <value>minor</value>
-         <value>dorian</value>
-         <value>phrygian</value>
-         <value>lydian</value>
-         <value>mixolydian</value>
-         <value>aeolian</value>
-         <value>locrian</value>
-      </choice>
-   </define>
    <define name="data.MUSICFONT">
       <data type="token"/>
    </define>
@@ -796,6 +707,20 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
          <ref name="model.backLike"/>
       </optional>
    </define>
+   <define name="data.NEUMENAMES">
+      <choice>
+         <value>punctum</value>
+         <value>virga</value>
+         <value>pes</value>
+         <value>clivis</value>
+         <value>torculus</value>
+         <value>oriscus</value>
+         <value>apostropha</value>
+         <value>climacus</value>
+         <value>scandicus</value>
+         <value>torculus</value>
+      </choice>
+   </define>
    <define name="att.regularmethod.attributes">
       <ref name="att.regularmethod.attribute.method"/>
    </define>
@@ -896,9 +821,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5//
    </define>
    <define name="model.workIdent">
       <choice>
-         <ref name="key"/>
          <ref name="mensuration"/>
-         <ref name="meter"/>
          <ref name="model.incipLike"/>
          <ref name="tempo"/>
       </choice>
@@ -1595,16 +1518,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
          <empty/>
       </element>
    </define>
-   <define name="key">
-      <element name="key">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Key captures information about tonal center and mode.</a:documentation>
-         <text/>
-         <ref name="att.common.attributes"/>
-         <ref name="att.bibl.attributes"/>
-         <ref name="att.keySig.log.attributes"/>
-         <empty/>
-      </element>
-   </define>
    <define name="language">
       <element name="language">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Description of a language used in the document.</a:documentation>
@@ -1670,17 +1583,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
          <ref name="att.bibl.attributes"/>
          <ref name="att.lang.attributes"/>
          <ref name="att.mensur.log.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="meter">
-      <element name="meter">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Captures information about the time signature within bibliographic descriptions.</a:documentation>
-         <text/>
-         <ref name="att.common.attributes"/>
-         <ref name="att.bibl.attributes"/>
-         <ref name="att.lang.attributes"/>
-         <ref name="att.meterSig.log.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2227,39 +2129,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
          <empty/>
       </element>
    </define>
-   <define name="att.accid.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.accid.ges.attributes">
-      <empty/>
-   </define>
-   <define name="att.accid.log.attributes">
-      <ref name="att.accidental.attributes"/>
-      <ref name="att.controlevent.attributes"/>
-      <ref name="att.accid.log.attribute.func"/>
-   </define>
-   <define name="att.accid.log.attribute.func">
-      <optional>
-         <attribute name="func">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records the function of an accidental.</a:documentation>
-            <choice>
-               <value>caution</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">cautionary accidental.</a:documentation>
-               <value>edit</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">editorial accidental.</a:documentation>
-            </choice>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.accid.vis.attributes">
-      <ref name="att.color.attributes"/>
-      <ref name="att.enclosingchars.attributes"/>
-      <ref name="att.placement.attributes"/>
-      <ref name="att.staffloc.attributes"/>
-      <ref name="att.visualoffset.ho.attributes"/>
-      <ref name="att.visualoffset.vo.attributes"/>
-      <ref name="att.xy.attributes"/>
-   </define>
    <define name="att.accidental.attributes">
       <ref name="att.accidental.attribute.accid"/>
    </define>
@@ -2275,13 +2144,13 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mei-att.accidental-accid-accid_on_b_only-constraint-3">
+            id="mei-att.accidental-accid_on_b_only-constraint-3">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="mei:note">
-                    <sch:report test="not(@pname='b') and @accid">accidentals can only be placed on the note b</sch:report>
-                  </sch:rule>
+                <sch:report test="not(@pname='b') and @accid">accidentals can only be placed on the note b</sch:report>
+              </sch:rule>
    </pattern>
    <define name="att.accidental.performed.attributes">
       <ref name="att.accidental.performed.attribute.accid.ges"/>
@@ -2323,24 +2192,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
    </define>
    <define name="att.annot.vis.attributes">
       <empty/>
-   </define>
-   <define name="att.artic.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.artic.ges.attributes">
-      <empty/>
-   </define>
-   <define name="att.artic.log.attributes">
-      <ref name="att.articulation.attributes"/>
-      <ref name="att.controlevent.attributes"/>
-   </define>
-   <define name="att.artic.vis.attributes">
-      <ref name="att.color.attributes"/>
-      <ref name="att.enclosingchars.attributes"/>
-      <ref name="att.placement.attributes"/>
-      <ref name="att.staffloc.attributes"/>
-      <ref name="att.visualoffset.attributes"/>
-      <ref name="att.xy.attributes"/>
    </define>
    <define name="att.articulation.attributes">
       <ref name="att.articulation.attribute.artic"/>
@@ -2801,26 +2652,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
          </attribute>
       </optional>
    </define>
-   <define name="att.dir.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.dir.ges.attributes">
-      <ref name="att.duration.performed.attributes"/>
-   </define>
-   <define name="att.dir.log.attributes">
-      <ref name="att.controlevent.attributes"/>
-      <ref name="att.augmentdots.attributes"/>
-      <ref name="att.duration.additive.attributes"/>
-      <ref name="att.startendid.attributes"/>
-      <ref name="att.timestamp2.musical.attributes"/>
-   </define>
-   <define name="att.dir.vis.attributes">
-      <ref name="att.placement.attributes"/>
-      <ref name="att.visualoffset.attributes"/>
-      <ref name="att.visualoffset2.ho.attributes"/>
-      <ref name="att.visualoffset2.to.attributes"/>
-      <ref name="att.xy.attributes"/>
-   </define>
    <define name="att.distances.attributes">
       <ref name="att.distances.attribute.dynam.dist"/>
       <ref name="att.distances.attribute.harm.dist"/>
@@ -2849,36 +2680,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
             <ref name="data.MEASUREMENT"/>
          </attribute>
       </optional>
-   </define>
-   <define name="att.dot.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.dot.ges.attributes">
-      <empty/>
-   </define>
-   <define name="att.dot.log.attributes">
-      <ref name="att.controlevent.attributes"/>
-      <ref name="att.dot.log.attribute.form"/>
-   </define>
-   <define name="att.dot.log.attribute.form">
-      <optional>
-         <attribute name="form">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">records the function of the dot.</a:documentation>
-            <choice>
-               <value>aug</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">augmentation dot.</a:documentation>
-               <value>div</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">dot of division.</a:documentation>
-            </choice>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.dot.vis.attributes">
-      <ref name="att.color.attributes"/>
-      <ref name="att.staffloc.attributes"/>
-      <ref name="att.visualoffset.ho.attributes"/>
-      <ref name="att.visualoffset.vo.attributes"/>
-      <ref name="att.xy.attributes"/>
    </define>
    <define name="att.duration.additive.attributes">
       <ref name="att.duration.additive.attribute.dur"/>
@@ -2962,26 +2763,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
          </attribute>
       </optional>
    </define>
-   <define name="att.dynam.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.dynam.ges.attributes">
-      <ref name="att.duration.performed.attributes"/>
-   </define>
-   <define name="att.dynam.log.attributes">
-      <ref name="att.controlevent.attributes"/>
-      <ref name="att.augmentdots.attributes"/>
-      <ref name="att.duration.additive.attributes"/>
-      <ref name="att.startendid.attributes"/>
-      <ref name="att.timestamp2.musical.attributes"/>
-   </define>
-   <define name="att.dynam.vis.attributes">
-      <ref name="att.placement.attributes"/>
-      <ref name="att.visualoffset.attributes"/>
-      <ref name="att.visualoffset2.ho.attributes"/>
-      <ref name="att.visualoffset2.to.attributes"/>
-      <ref name="att.xy.attributes"/>
-   </define>
    <define name="att.enclosingchars.attributes">
       <ref name="att.enclosingchars.attribute.enclose"/>
    </define>
@@ -2992,18 +2773,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
             <ref name="data.ENCLOSURE"/>
          </attribute>
       </optional>
-   </define>
-   <define name="att.ending.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.ending.ges.attributes">
-      <empty/>
-   </define>
-   <define name="att.ending.log.attributes">
-      <empty/>
-   </define>
-   <define name="att.ending.vis.attributes">
-      <empty/>
    </define>
    <define name="att.event.attributes">
       <ref name="att.timestamp.musical.attributes"/>
@@ -3107,19 +2876,6 @@ Suggested values include: 1] plaineAndEasie; 2] humdrumKern; 3] parsons</a:docum
          <attribute name="join">
             <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">used for linking visually separate entities that form a single logical entity, for example, multiple slurs broken across a system break that form a single musical phrase. Also used to indicate a measure which metrically completes the current one. Record the identifiers of the separately encoded components, excluding the one carrying the attribute.</a:documentation>
             <ref name="data.URIS"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.keySig.log.attributes">
-      <ref name="att.accidental.attributes"/>
-      <ref name="att.pitch.attributes"/>
-      <ref name="att.keySig.log.attribute.mode"/>
-   </define>
-   <define name="att.keySig.log.attribute.mode">
-      <optional>
-         <attribute name="mode">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates major, minor, or other tonality.</a:documentation>
-            <ref name="data.MODE"/>
          </attribute>
       </optional>
    </define>
@@ -3440,37 +3196,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          </attribute>
       </optional>
    </define>
-   <define name="att.meterSig.log.attributes">
-      <ref name="att.meterSig.log.attribute.count"/>
-      <ref name="att.meterSig.log.attribute.sym"/>
-      <ref name="att.meterSig.log.attribute.unit"/>
-   </define>
-   <define name="att.meterSig.log.attribute.count">
-      <optional>
-         <attribute name="count">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">captures the number of beats in a measure, that is, the top number of the meter signature. It must contain a decimal number or an additive expression that evaluates to a decimal number, such as 2+3.</a:documentation>
-            <data type="string">
-               <param name="pattern">\d+(\.\d+)?(\s*\+\s*\d+(\.\d+)?)*</param>
-            </data>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.meterSig.log.attribute.sym">
-      <optional>
-         <attribute name="sym">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the use of a meter symbol instead of a numeric meter signature, that is, 'C' for common time or 'C' with a slash for cut time.</a:documentation>
-            <ref name="data.METERSIGN"/>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.meterSig.log.attribute.unit">
-      <optional>
-         <attribute name="unit">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains the number indicating the beat unit, that is, the bottom number of the meter signature.</a:documentation>
-            <data type="decimal"/>
-         </attribute>
-      </optional>
-   </define>
    <define name="att.meterSigDefault.log.attributes">
       <ref name="att.meterSigDefault.log.attribute.meter.count"/>
       <ref name="att.meterSigDefault.log.attribute.meter.unit"/>
@@ -3740,18 +3465,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
    <define name="att.pad.vis.attributes">
       <empty/>
    </define>
-   <define name="att.part.anl.attributes">
-      <ref name="att.common.anl.attributes"/>
-   </define>
-   <define name="att.part.ges.attributes">
-      <empty/>
-   </define>
-   <define name="att.part.log.attributes">
-      <empty/>
-   </define>
-   <define name="att.part.vis.attributes">
-      <empty/>
-   </define>
    <define name="att.parts.anl.attributes">
       <ref name="att.common.anl.attributes"/>
    </define>
@@ -3814,10 +3527,12 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <ref name="att.pitch.attribute.pname"/>
    </define>
    <define name="att.pitch.attribute.pname">
-      <attribute name="pname">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a written pitch name.</a:documentation>
-         <ref name="data.PITCHNAME"/>
-      </attribute>
+      <optional>
+         <attribute name="pname">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a written pitch name.</a:documentation>
+            <ref name="data.PITCHNAME"/>
+         </attribute>
+      </optional>
    </define>
    <define name="att.pitched.attributes">
       <ref name="att.pitch.attributes"/>
@@ -5153,8 +4868,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
    </define>
    <define name="model.controleventLike">
       <choice>
-         <ref name="dir"/>
-         <ref name="dynam"/>
          <ref name="phrase"/>
          <ref name="tempo"/>
       </choice>
@@ -5233,9 +4946,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       </oneOrMore>
    </define>
    <define name="model.endingLike">
-      <choice>
-         <ref name="ending"/>
-      </choice>
+      <notAllowed/>
    </define>
    <define name="model.eventLike">
       <choice>
@@ -5249,6 +4960,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="space"/>
          <ref name="neume"/>
          <ref name="syllable"/>
+         <ref name="division"/>
       </choice>
    </define>
    <define name="model.identifierLike">
@@ -5493,11 +5205,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       </oneOrMore>
    </define>
    <define name="model.noteModifierLike">
-      <choice>
-         <ref name="accid"/>
-         <ref name="artic"/>
-         <ref name="dot"/>
-      </choice>
+      <notAllowed/>
    </define>
    <define name="model.numLike">
       <choice>
@@ -5538,9 +5246,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       </choice>
    </define>
    <define name="model.partLike">
-      <choice>
-         <ref name="part"/>
-      </choice>
+      <notAllowed/>
    </define>
    <define name="model.partsLike">
       <choice>
@@ -5886,20 +5592,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="title"/>
       </oneOrMore>
    </define>
-   <define name="accid">
-      <element name="accid">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(accidental) – Records a temporary alteration to the pitch of a note.</a:documentation>
-         <empty/>
-         <ref name="att.common.attributes"/>
-         <ref name="att.facsimile.attributes"/>
-         <ref name="att.typography.attributes"/>
-         <ref name="att.accid.log.attributes"/>
-         <ref name="att.accid.vis.attributes"/>
-         <ref name="att.accid.ges.attributes"/>
-         <ref name="att.accid.anl.attributes"/>
-         <empty/>
-      </element>
-   </define>
    <define name="actor">
       <element name="actor">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Name of an actor appearing within a cast list.</a:documentation>
@@ -5985,20 +5677,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.facsimile.attributes"/>
          <ref name="att.lang.attributes"/>
          <ref name="att.typed.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="artic">
-      <element name="artic">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(articulation) – An indication of how to play a note or chord.</a:documentation>
-         <empty/>
-         <ref name="att.common.attributes"/>
-         <ref name="att.facsimile.attributes"/>
-         <ref name="att.typography.attributes"/>
-         <ref name="att.artic.log.attributes"/>
-         <ref name="att.artic.vis.attributes"/>
-         <ref name="att.artic.ges.attributes"/>
-         <ref name="att.artic.anl.attributes"/>
          <empty/>
       </element>
    </define>
@@ -6272,39 +5950,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <empty/>
       </element>
    </define>
-   <define name="dir">
-      <element name="dir">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(directive) – A text expression that is on the score (typically above, below, or between staves, but not on the staff) not encoded elsewhere in more specific elements, such as &lt;tempo&gt; or &lt;dynam&gt;.</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <ref name="model.textphraseLike.limited"/>
-               <ref name="model.editLike"/>
-               <ref name="model.transcriptionLike"/>
-            </choice>
-         </zeroOrMore>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-dir-dir_start-type_attributes_required-constraint-9">
-            <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                      xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="mei:dir[not(ancestor::mei:syllable)]">
-               <sch:assert test="@startid or @tstamp or @tstamp.ges or @tstamp.real">Must have one of
-              the attributes: startid, tstamp, tstamp.ges or tstamp.real</sch:assert>
-            </sch:rule>
-         </pattern>
-         <ref name="att.common.attributes"/>
-         <ref name="att.facsimile.attributes"/>
-         <ref name="att.lang.attributes"/>
-         <ref name="att.typed.attributes"/>
-         <ref name="att.dir.log.attributes"/>
-         <ref name="att.dir.vis.attributes"/>
-         <ref name="att.dir.ges.attributes"/>
-         <ref name="att.dir.anl.attributes"/>
-         <empty/>
-      </element>
-   </define>
    <define name="distributor">
       <element name="distributor">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Name of a person or other agency responsible for the distribution of a bibliographic item.</a:documentation>
@@ -6318,51 +5963,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.bibl.attributes"/>
          <ref name="att.facsimile.attributes"/>
          <ref name="att.lang.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="dot">
-      <element name="dot">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Dot of augmentation or division.</a:documentation>
-         <empty/>
-         <ref name="att.common.attributes"/>
-         <ref name="att.facsimile.attributes"/>
-         <ref name="att.dot.log.attributes"/>
-         <ref name="att.dot.vis.attributes"/>
-         <ref name="att.dot.ges.attributes"/>
-         <ref name="att.dot.anl.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="dynam">
-      <element name="dynam">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(dynamic) – Indication of the volume of a note, phrase, or section of music.</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <ref name="model.textphraseLike.limited"/>
-               <ref name="model.editLike"/>
-               <ref name="model.transcriptionLike"/>
-            </choice>
-         </zeroOrMore>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-dynam-dynam_start-type_attributes_required-constraint-10">
-            <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
-                      xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="mei:dynam">
-               <sch:assert test="@startid or @tstamp or @tstamp.ges or @tstamp.real">Must have one of
-              the attributes: startid, tstamp, tstamp.ges or tstamp.real</sch:assert>
-            </sch:rule>
-         </pattern>
-         <ref name="att.common.attributes"/>
-         <ref name="att.facsimile.attributes"/>
-         <ref name="att.lang.attributes"/>
-         <ref name="att.dynam.log.attributes"/>
-         <ref name="att.dynam.vis.attributes"/>
-         <ref name="att.dynam.ges.attributes"/>
-         <ref name="att.dynam.anl.attributes"/>
          <empty/>
       </element>
    </define>
@@ -6395,34 +5995,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.facsimile.attributes"/>
          <ref name="att.lang.attributes"/>
          <ref name="att.typed.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="ending">
-      <element name="ending">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta, etc.</a:documentation>
-         <zeroOrMore>
-            <ref name="expansion"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <choice>
-               <ref name="model.appLike"/>
-               <ref name="model.divLike"/>
-               <ref name="model.milestoneLike.music"/>
-               <ref name="model.annotLike"/>
-               <ref name="model.editLike"/>
-               <ref name="model.transcriptionLike"/>
-               <ref name="model.sectionPart"/>
-            </choice>
-         </zeroOrMore>
-         <ref name="att.common.attributes"/>
-         <ref name="att.facsimile.attributes"/>
-         <ref name="att.typed.attributes"/>
-         <ref name="att.pointing.attributes"/>
-         <ref name="att.ending.anl.attributes"/>
-         <ref name="att.ending.ges.attributes"/>
-         <ref name="att.ending.log.attributes"/>
-         <ref name="att.ending.vis.attributes"/>
          <empty/>
       </element>
    </define>
@@ -6605,12 +6177,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </choice>
          </optional>
          <optional>
-            <ref name="key"/>
-         </optional>
-         <optional>
-            <ref name="meter"/>
-         </optional>
-         <optional>
             <ref name="mensuration"/>
          </optional>
          <zeroOrMore>
@@ -6662,7 +6228,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-layer-Check_layern-constraint-12">
+                  id="mei-layer-Check_layern-constraint-9">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -6692,7 +6258,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             <ref name="model.instrDefLike"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-layerDef-Check_layerDefn-constraint-13">
+                  id="mei-layerDef-Check_layerDefn-constraint-10">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -6799,7 +6365,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
              prefix="mei"
              uri="http://www.music-encoding.org/ns/mei"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-mei-Check_staff-constraint-14">
+                  id="mei-mei-Check_staff-constraint-11">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -6866,6 +6432,19 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.note.vis.attributes"/>
          <ref name="att.note.ges.attributes"/>
          <ref name="att.note.anl.attributes"/>
+         <optional>
+            <attribute name="connection">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(connections) connects 
+Suggested values include: 1] nl; 2] l</a:documentation>
+               <choice>
+                  <value>nl</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>l</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <data type="Name"/>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -6913,30 +6492,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.pad.vis.attributes"/>
          <ref name="att.pad.ges.attributes"/>
          <ref name="att.pad.anl.attributes"/>
-         <empty/>
-      </element>
-   </define>
-   <define name="part">
-      <element name="part">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An alternative visual rendition of the score from the point of view of a particular performer (or group of performers).</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <ref name="model.appLike"/>
-               <ref name="model.divLike"/>
-               <ref name="model.milestoneLike.music"/>
-               <ref name="model.annotLike"/>
-               <ref name="model.editLike"/>
-               <ref name="model.transcriptionLike"/>
-               <ref name="model.scorePart"/>
-            </choice>
-         </zeroOrMore>
-         <ref name="att.common.attributes"/>
-         <ref name="att.declaring.attributes"/>
-         <ref name="att.typed.attributes"/>
-         <ref name="att.part.log.attributes"/>
-         <ref name="att.part.vis.attributes"/>
-         <ref name="att.part.ges.attributes"/>
-         <ref name="att.part.anl.attributes"/>
          <empty/>
       </element>
    </define>
@@ -7067,7 +6622,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Indication of 1) a "unified melodic idea" or 2) performance technique.</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-phrase-phrase_start-_and_end-type_attributes_required-constraint-15">
+                  id="mei-phrase-phrase_start-_and_end-type_attributes_required-constraint-12">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7408,7 +6963,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-section-Check_sectionexpansion-constraint-16">
+                  id="mei-section-Check_sectionexpansion-constraint-13">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7530,7 +7085,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staff-Check_staffn-constraint-17">
+                  id="mei-staff-Check_staffn-constraint-14">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7564,7 +7119,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffDef-Check_staffDefn-constraint-18">
+                  id="mei-staffDef-Check_staffDefn-constraint-15">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7579,7 +7134,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffDef-Check_ancestor_staff-constraint-19">
+                  id="mei-staffDef-Check_ancestor_staff-constraint-16">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7591,7 +7146,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffDef-Check_clef_position_staffDef-constraint-20">
+                  id="mei-staffDef-Check_clef_position_staffDef-constraint-17">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7602,7 +7157,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffDef-Check_clef_position_staffDef_nolines-constraint-21">
+                  id="mei-staffDef-Check_clef_position_staffDef_nolines-constraint-18">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7616,7 +7171,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffDef-Check_tab_strings_lines-constraint-22">
+                  id="mei-staffDef-Check_tab_strings_lines-constraint-19">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7629,7 +7184,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffDef-Check_tab_strings_nolines-constraint-23">
+                  id="mei-staffDef-Check_tab_strings_nolines-constraint-20">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7715,7 +7270,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             <ref name="grpSym"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-staffGrp-Check_staffGrp_unique_staff_n_values-constraint-28">
+                  id="mei-staffGrp-Check_staffGrp_unique_staff_n_values-constraint-25">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7771,7 +7326,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </choice>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-tempo-tempo_in_header_disallow_most_attrs-constraint-29">
+                  id="mei-tempo-tempo_in_header_disallow_most_attrs-constraint-26">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -7783,7 +7338,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-tempo-tempo_start-type_attributes_required-constraint-30">
+                  id="mei-tempo-tempo_start-type_attributes_required-constraint-27">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -8690,7 +8245,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             <ref name="zone"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-graphic-graphic_child_of_zone-constraint-31">
+                  id="mei-graphic-graphic_child_of_zone-constraint-28">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9065,7 +8620,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mei-att.common.anl-copyof-When_copyof_element_empy-constraint-32">
+            id="mei-att.common.anl-copyof-When_copyof_element_empy-constraint-29">
       <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                 xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9500,8 +9055,6 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Lyric verse.</a:documentation>
          <zeroOrMore>
             <choice>
-               <ref name="dir"/>
-               <ref name="dynam"/>
                <ref name="tempo"/>
                <ref name="space"/>
             </choice>
@@ -9519,6 +9072,19 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
          <ref name="att.verse.vis.attributes"/>
          <ref name="att.verse.ges.attributes"/>
          <ref name="att.verse.anl.attributes"/>
+         <optional>
+            <attribute name="pos">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>i</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>m</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>t</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -9529,7 +9095,7 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
             <ref name="clip"/>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-avFile-avFile_child_of_clip-constraint-33">
+                  id="mei-avFile-avFile_child_of_clip-constraint-30">
             <sch:rule xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
                       xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -9590,75 +9156,39 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
    </define>
    <define name="neume">
       <element name="neume">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume) Identifies a neume and its properties, including text, pitch, contour and name. </a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume) Identifies a neume and its properties, including pitch, contour and name. </a:documentation>
          <zeroOrMore>
-            <ref name="note"/>
+            <choice>
+               <ref name="note"/>
+               <ref name="verse"/>
+            </choice>
          </zeroOrMore>
-         <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron">
-                <sch:rule context="mei:neume">
-                  <sch:assert test="not(@cont) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
-                  <sch:assert test="not(@connect) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
-                  <sch:assert test="@name or @cont or @connect">Must have both @cont and @connect and/or @name</sch:assert>
-                </sch:rule>
-              </sch:pattern>
          <ref name="att.common.attributes"/>
          <ref name="att.facsimile.attributes"/>
          <ref name="att.typed.attributes"/>
          <optional>
-            <attribute name="cont">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume contour) Contour </a:documentation>
+            <attribute name="contour">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume contour) Contour 
+Suggested values include: 1] N; 2] NH</a:documentation>
                <choice>
                   <value>N</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>NH</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="connect">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume connectivity) connectivity </a:documentation>
-               <choice>
-                  <value>l</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>n</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <data type="Name"/>
                </choice>
             </attribute>
          </optional>
          <optional>
             <attribute name="name">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Neume name) name </a:documentation>
-               <choice>
-                  <value>punctum</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>virga</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>pes</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>clivis</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>torculus</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>torculusresupinus</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>porrectus</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>porrectusflexus</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>apostropha</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>oriscus</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>pressusmaior</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>pressusminor</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>virgastrata</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-               </choice>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">neume name.</a:documentation>
+               <ref name="data.NEUMENAMES"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="artic">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">articulation.</a:documentation>
+               <ref name="data.ARTICULATION"/>
             </attribute>
          </optional>
          <empty/>
@@ -9668,15 +9198,21 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
       <element name="syllable">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
          <oneOrMore>
-            <ref name="neume"/>
+            <choice>
+               <ref name="neume"/>
+               <ref name="division"/>
+               <ref name="verse"/>
+            </choice>
          </oneOrMore>
          <ref name="att.common.attributes"/>
          <ref name="att.facsimile.attributes"/>
          <ref name="att.typed.attributes"/>
-         <attribute name="syl">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(syllable text) text </a:documentation>
-            <text/>
-         </attribute>
+         <optional>
+            <attribute name="syl">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(syllable text) text </a:documentation>
+               <text/>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="pos">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
@@ -9686,6 +9222,28 @@ Suggested values include: 1] cm; 2] mm; 3] in; 4] issue; 5] page; 6] px; 7] pt; 
                   <value>m</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>t</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="division">
+      <element name="division">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(breath mark/division) breath mark/barline for neumes </a:documentation>
+         <empty/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>small</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>partial</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>full</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>double</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
             </attribute>
