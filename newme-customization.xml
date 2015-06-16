@@ -82,6 +82,12 @@
                 <rng:ref name="data.ARTICULATION"/>
               </datatype>
             </attDef>
+            <attDef ident="form" usage="rec">
+              <valList type="semi">
+                <valItem ident="quilisma"/>
+                <valItem ident="rhombic"/>
+              </valList>
+            </attDef>
           </attList>
           <content>
             <rng:zeroOrMore>
