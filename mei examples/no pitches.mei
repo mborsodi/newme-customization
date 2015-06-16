@@ -24,7 +24,7 @@
                 <section>
                     <staff>
                         <layer>
-                            <syllable syl="Iu" pos="i">
+                            <syllable syl="Iu" pos="i" type="initial">
                                 <neume contour="N">
                                     <note/>
                                 </neume>
