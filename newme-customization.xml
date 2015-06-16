@@ -68,64 +68,34 @@
             <memberOf key="model.eventLike"/>
           </classes>
           <attList>
-            <attDef ident="cont" usage="opt">
+            <attDef ident="contour" usage="opt">
               <gloss>Neume contour</gloss>
               <desc>
                 Contour
               </desc>
-              <valList type="closed">
+              <valList type="semi">
                 <valItem ident="N"/>
                 <valItem ident="NH"/>
               </valList>
             </attDef>
-            <attDef ident="connect" usage="opt">
-              <gloss>Neume connectivity</gloss>
-              <desc>
-                connectivity
-              </desc>
-              <valList type="closed">
-                <valItem ident="l"/>
-                <valItem ident="n"/>
-              </valList> 
-            </attDef>
             <attDef ident="name" usage="opt">
-              <gloss>Neume name</gloss>
-              <desc>
-                name
-              </desc>
-              <valList type="closed">
-                <valItem ident="punctum"/>
-                <valItem ident="virga"/>
-                <valItem ident="pes"/>
-                <valItem ident="clivis"/>
-                <valItem ident="torculus"/>
-                <valItem ident="torculusresupinus"/>
-                <valItem ident="porrectus"/>
-                <valItem ident="porrectusflexus"/>
-                <valItem ident="apostropha"/>
-                <valItem ident="oriscus"/>
-                <valItem ident="pressusmaior"/>
-                <valItem ident="pressusminor"/>
-                <valItem ident="virgastrata"/>
-              </valList>
+              <desc>neume name.</desc>
+              <datatype>
+                <rng:ref name="data.NEUMENAMES"/>
+              </datatype>
+            </attDef>
+            <attDef ident="artic" usage="opt">
+              <desc>articulation.</desc>
+              <datatype>
+                <rng:ref name="data.ARTICULATION"/>
+              </datatype>
             </attDef>
           </attList>
-          <constraintSpec ident="neume_attributes"
-            scheme="isoschematron">
-            <constraint>
-              <sch:pattern>
-                <sch:rule context="mei:neume">
-                  <sch:assert test="not(@cont) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
-                  <sch:assert test="not(@connect) or (@cont and @connect)">Must have both @cont and @connect and/or @name</sch:assert>
-                  <sch:assert test="@name or @cont or @connect">Must have both @cont and @connect and/or @name</sch:assert>
-                </sch:rule>
-              </sch:pattern>
-            </constraint>
-          </constraintSpec>
           <content>
             <rng:zeroOrMore>
               <rng:choice>
                 <rng:ref name="note"/>
+                <rng:ref name="verse"/>
               </rng:choice>
             </rng:zeroOrMore>
           </content>
