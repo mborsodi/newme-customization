@@ -26,254 +26,254 @@
                         <layer>
                             <syllable syl="Mi" pos="i">
                                 <neume contour="N">
-                                    <note pname="d"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="se" pos="m">
                                 <neume contour="NL">
-                                    <note pname="f" connection="l"/>
-                                    <note pname="e"/>
+                                    <note pname="f" oct="3" connection="l"/>
+                                    <note pname="e" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ri" pos="m">
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="cor" pos="m">
                                 <neume contour="Nh">
-                                    <note pname="e" connection="s"/>
-                                    <note pname="f"/>
+                                    <note pname="e"  oct="3" connection="s"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="di" pos="m">
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="a" pos="t">
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="Do" pos="i">
                                 <neume contour="NH">
-                                    <note pname="e" connection="u"/>
-                                    <note pname="f"/>
+                                    <note pname="e" oct="3" connection="u"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                                 <neume contour="NL">
-                                    <note pname="g" connection="d"/>
+                                    <note pname="g" oct="3" connection="d"/>
                                     <note pname="f"/>
                                 </neume>
                             </syllable>
                             <syllable syl="mi" pos="m">
                                 <neume contour="NNN">
-                                    <note pname="f"/>
-                                    <note pname="f"/>
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ni" pos="t">
                                 <neume contour="NL" artic="mora">
-                                    <note pname="e" connection="l"/>
-                                    <note pname="d"/>
+                                    <note pname="e" oct="3" connection="l"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="ple" pos="i">
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="na" pos="t">
                                 <neume contour="NNN">
-                                    <note pname="f"/>
-                                    <note pname="f"/>
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="est">
                                 <neume contour="NL">
-                                    <note pname="f" connection="l"/>
-                                    <note pname="d"/>
+                                    <note pname="f" oct="3" connection="l"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ter" pos="i">
                                 <neume contour="Nh">
-                                    <note pname="f"/>
-                                    <note pname="g"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ra" pos="t">
                                 <neume contour="N" artic="mora">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="al" pos="i">
                                 <neume contour="Nl">
-                                    <note pname="g" connection="l"/>
-                                    <note pname="f"/>
+                                    <note pname="g" oct="3" connection="l"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="le" pos="m">
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <custos pname="f"/>
                             <syllable syl="lu" pos="m">
                                 <neume contour="NHLL">
-                                    <note pname="f" connection="l"/>
-                                    <note pname="a"/>
-                                    <note pname="g" artic="episema-below"/>
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3" connection="l"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3" artic="episema-below"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ia:" pos="t">
                                 <neume contour="NHL">
-                                    <note pname="f"/>
-                                    <note pname="g"/>
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="full"/>
                             <syllable syl="ver" pos="i">
                                 <neume contour="Nh">
-                                    <note pname="d" connection="leap"/>
-                                    <note pname="g"/>
+                                    <note pname="d" oct="3" connection="leap"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="bo" pos="t">
                                 <neume contour="N">
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="De" pos="i">
                                 <neume contour="NL">
-                                    <note pname="g" connection="leap"/>
-                                    <note pname="d"/>
+                                    <note pname="g" oct="3" connection="leap"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                                 <neume contour="NLL">
-                                    <note pname="g"/>
-                                    <note pname="f"/>
-                                    <note pname="e" artic="episema-below"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="e" oct="3" artic="episema-below"/>
                                 </neume>
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="i" pos="t">
                                 <neume contour="N" artic="mora">
-                                    <note pname="e"/>
+                                    <note pname="e" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="cae" pos="i">
                                 <neume contour="NNNL">
-                                    <note pname="f"/>
-                                    <note pname="f"/>
-                                    <note pname="f"/>
-                                    <note pname="d"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="li" pos="t">
                                 <neume contour="NL">
-                                    <note pname="f"/>
-                                    <note pname="e"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="e" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="fir" pos="i">
                                 <neume contour="Nh">
-                                    <note pname="f"/>
-                                    <note pname="g"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ma" pos="m">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ti" pos="t">
                                 <neume contour="NLL">
-                                    <note pname="f"/>
-                                    <note pname="e"/>
-                                    <note pname="d"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="e" oct="3"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="sunt">
                                 <neume contour="N" artic="mora">
-                                    <note pname="d"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="partial"/>
                             <syllable syl="al" pos="i">
                                 <neume contour="N">
-                                    <note pname="f"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="le" pos="m">
                                 <neume contour="NHHL">
-                                    <note pname="f"/>
-                                    <note pname="a"/>
-                                    <note pname="c"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="c" oct="4"/>
                                 </neume>
                             </syllable>
                             <syllable syl="lu" pos="m">
                                 <neume contour="NHL">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ia" pos="t">
                                 <neume contour="N" artic="mora">
-                                    <note pname="e"/>
+                                    <note pname="e" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
-                            <custos pname="g"/>
+                            <custos pname="g" oct="3"/>
                             <sb/>
                             <syllable syl="al" pos="i">
                                 <neume contour="N">
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="le" pos="m">
                                 <neume contour="N" artic="mora">
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                                 <neume contour="NHLL">
-                                    <note pname="a"/>
-                                    <note pname="b" accid="f"/>
-                                    <note pname="g" artic="episema-below"/>
-                                    <note pname="f"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="b" oct="3" accid="f"/>
+                                    <note pname="g" oct="3" artic="episema-below"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                                 <neume contour="NLL">
-                                    <note pname="a"/>
-                                    <note pname="g"/>
-                                    <note pname="f" artic="episema-below"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3" artic="episema-below"/>
                                 </neume>
                                 <neume contour="N">
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="lu" pos="m">
                                 <neume contour="NHLN">
-                                    <note pname="e"/>
-                                    <note pname="g"/>
-                                    <note pname="f"/>
-                                    <note pname="f"/>
+                                    <note pname="e" oct="3"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ia" pos="t">
                                 <neume contour="NL" artic="mora">
-                                    <note pname="f"/>
-                                    <note pname="e"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="e" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="double"/>
@@ -290,8 +290,8 @@
                                     <syl>Can</syl>
                                 </verse>
                                 <neume contour="NL">
-                                    <note pname="a" connection="l"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3" connection="l"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable pos="m">
@@ -305,8 +305,8 @@
                                     <syl>ta</syl>
                                 </verse>
                                 <neume contour="NH">
-                                    <note pname="g" connection="l"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3" connection="l"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <neume contour="NNN">
@@ -328,9 +328,9 @@
                                 <verse n="3">
                                     <syl>ei</syl>
                                 </verse>
-                                <note pname="a"/>
-                                <note pname="a"/>
-                                <note pname="a"/>
+                                <note pname="a" oct="3"/>
+                                <note pname="a" oct="3"/>
+                                <note pname="a" oct="3"/>
                             </neume>
                             <syllable>
                                 <verse n="1" pos="i">
@@ -343,8 +343,8 @@
                                     <syl>can</syl>
                                 </verse>
                                 <neume contour="NL">
-                                    <note pname="a" connection="l"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3" connection="l"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable>
@@ -358,8 +358,8 @@
                                     <syl>ti</syl>
                                 </verse>
                                 <neume contour="NH">
-                                    <note pname="g" connection="l"/>
-                                    <note pname="b"/>
+                                    <note pname="g" oct="3" connection="l"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable>
@@ -373,7 +373,7 @@
                                     <syl>cum</syl>
                                 </verse>
                                 <neume contour="N">
-                                    <note pname="b"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable>
@@ -387,8 +387,8 @@
                                     <syl>no</syl>
                                 </verse>
                                 <neume contour="NH">
-                                    <note pname="a" connection="l"/>
-                                    <note pname="b"/>
+                                    <note pname="a" oct="3" connection="l"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable pos="t">
@@ -404,8 +404,8 @@
                                     <syl>vum</syl>
                                 </verse>
                                 <neume contour="NN">
-                                    <note pname="a"/>
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="full"/>
@@ -420,8 +420,8 @@
                                     <syl>be</syl>
                                 </verse>
                                 <neume contour="NL">
-                                    <note pname="a" connection="d"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3" connection="d"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable>
@@ -435,8 +435,8 @@
                                     <syl>be</syl>
                                 </verse>
                                 <neume contour="NH">
-                                    <note pname="g" connection="l"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3" connection="l"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <neume contour="NNN">
@@ -454,11 +454,11 @@
                                     <syl>lli</syl>
                                     <syl>te</syl>
                                 </verse>
-                                <note pname="a"/>
-                                <note pname="a"/>
-                                <note pname="a"/>
+                                <note pname="a" oct="3"/>
+                                <note pname="a" oct="3"/>
+                                <note pname="a" oct="3"/>
                             </neume>
-                            <custos pname="a"/>
+                            <custos pname="a" oct="3"/>
                             <sb/>
                             <neume contour="N">
                                 <verse n="1" pos="i">
@@ -470,7 +470,7 @@
                                 <verse n="3">
                                     <syl>ei</syl>
                                 </verse>
-                                <note pname="a"/>
+                                <note pname="a" oct="3"/>
                             </neume>
                             <neume contour="NNN">
                                 <verse n="2" pos="t">
@@ -497,15 +497,15 @@
                                 <verse n="3" pos="t">
                                     <syl>fe</syl>
                                 </verse>
-                                <note pname="a"/>
-                                <note pname="a"/>
-                                <note pname="a"/>
+                                <note pname="a" oct="3"/>
+                                <note pname="a" oct="3"/>
+                                <note pname="a" oct="3"/>
                             </neume>
                             <neume contour="N">
                                 <verse n="2" pos="i">
                                     <syl>psal</syl>
                                 </verse>
-                                <note pname="a"/>
+                                <note pname="a" oct="3"/>
                             </neume>
                             <syllable>
                                 <verse n="1" pos="i">
@@ -518,8 +518,8 @@
                                     <syl>ra</syl>
                                 </verse>
                                 <neume contour="NL">
-                                    <note pname="g"/>
-                                    <note pname="f"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable>
@@ -533,8 +533,8 @@
                                     <syl>ti</syl>
                                 </verse>
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable>
@@ -548,7 +548,7 @@
                                     <syl>o</syl>
                                 </verse>
                                 <neume contour="N">
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable pos="t">
@@ -562,242 +562,242 @@
                                     <syl>ne.</syl>
                                 </verse>
                                 <neume contour="NHLN">
-                                    <note pname="e"/>
-                                    <note pname="g"/>
-                                    <note pname="f"/>
-                                    <note pname="f"/>
+                                    <note pname="e" oct="3"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="double"/>
                             <sb/>
                             <syllable syl="Glo" pos="i">
                                 <neume contour="NL">
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ri" pos="m">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="a" pos="t">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="Pa" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="tri" pos="t">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="et">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="fi" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="li" pos="m">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="o" pos="t">
                                 <neume contour="N" artic="mora">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="et">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="Spi" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ri" pos="m">
                                 <neume contour="NL">
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="tu" pos="m">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="b"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="i" pos="t">
                                 <neume contour="N">
-                                    <note pname="b"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="San" pos="i">
                                 <neume contour="NH">
-                                    <note pname="a"/>
-                                    <note pname="b"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="cto" pos="t">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="full"/>
                             <syllable syl="Si" pos="i">
                                 <neume contour="NL">
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="cut" pos="t">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="e" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
-                            <custos pname="a"/>
+                            <custos pname="a" oct="3"/>
                             <sb/>
                             <syllable syl="rat" pos="t">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="in">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="prin" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ci" pos="m">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="pi" pos="m">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="o" pos="t">
                                 <neume contour="N" artic="mora">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="et">
                                 <neume contour="NL">
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="nunc">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="b"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="et">
                                 <neume contour="N">
-                                    <note pname="b"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="sem" pos="i">
                                 <neume contour="NL">
-                                    <note pname="a"/>
-                                    <note pname="b"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="b" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="per" pos="t">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="full"/>
                             <syllable syl="et">
                                 <neume contour="NL">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                     <note pname="g"/>
                                 </neume>
                             </syllable>
                             <syllable syl="in">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="sae" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="cu" pos="m">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="la" pos="t">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="sae" pos="i">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
-                            <custos pname="a"/>
+                            <custos pname="a" oct="3"/>
                             <sb/>
                             <syllable syl="cu" pos="m">
                                 <neume contour="N">
-                                    <note pname="a"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="lo" pos="m">
                                 <neume contour="NL">
-                                    <note pname="g"/>
-                                    <note pname="f"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="rum" pos="t">
                                 <neume contour="NH">
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="A" pos="i">
                                 <neume contour="N">
-                                    <note pname="g"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="men" pos="t">
                                 <neume contour="NHLN">
-                                    <note pname="e"/>
-                                    <note pname="g"/>
-                                    <note pname="f"/>
-                                    <note pname="f"/>
+                                    <note pname="e" oct="3"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="f" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="double"/>

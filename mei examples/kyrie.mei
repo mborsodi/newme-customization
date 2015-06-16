@@ -26,53 +26,53 @@
                         <layer>
                             <syllable syl="Ky" pos="i">
                                 <neume name="pes">
-                                    <note pname="a"/>
-                                    <note pname="b" accid="f"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="b"  oct="3" accid="f"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ri" pos="m">
                                 <neume name="clivis">
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="e" pos="t">
                                 <neume name="clivis" artic="mora">
-                                    <note pname="a"/>
-                                    <note pname="d"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="e" pos="i">
                                 <neume name="scandicus">
-                                    <note pname="f"/>
-                                    <note pname="g"/>
-                                    <note pname="a"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="g" oct="3"/>
+                                    <note pname="a" oct="3"/>
                                 </neume>
                                 <neume name="climacus">
-                                    <note pname="b" accid="f"/>
-                                    <note pname="a"/>
-                                    <note pname="g"/>
+                                    <note pname="b"  oct="3" accid="f"/>
+                                    <note pname="a" oct="3"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                                 <neume name="climacus">
-                                    <note pname="f"/>
-                                    <note pname="e"/>
-                                    <note pname="d"/>
+                                    <note pname="f" oct="3"/>
+                                    <note pname="e" oct="3"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="le" pos="m">
                                 <neume name="punctum">
-                                    <note pname="c"/>
+                                    <note pname="c" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="i" pos="m">
                                 <neume name="punctum">
-                                    <note pname="d"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="son" pos="t">
                                 <neume name="punctum" artic="mora">
-                                    <note pname="d"/>
+                                    <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                         </layer>
