@@ -198,9 +198,47 @@
             <rng:oneOrMore>
               <rng:choice>
                 <rng:ref name="neume"/>
+                <rng:ref name="division"/>
+                <rng:ref name="verse"/>
               </rng:choice>
             </rng:oneOrMore>
           </content>
+        </elementSpec>
+        
+        
+        <!--Add position attribute to verse element-->
+        <elementSpec ident="verse" module="MEI.lyrics" mode="change">
+          <attList>
+            <attDef ident="pos" usage="rec">
+              <valList type="closed">
+                <valItem ident="i"/>
+                <valItem ident="m"/>
+                <valItem ident="t"/>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        
+        
+        <!--Add breath mark instead of barLine-->
+        <elementSpec ident="division" module="MEI.newmes" mode="add">
+          <gloss>breath mark/division</gloss>
+            <desc>
+                breath mark/barline for neumes
+            </desc>
+          <classes>
+            <memberOf key="model.eventLike"/>
+          </classes>
+          <attList>
+            <attDef ident="type" usage="rec">
+              <valList type="closed">
+                <valItem ident="small"/>
+                <valItem ident="partial"/>
+                <valItem ident="full"/>
+                <valItem ident="double"/>
+              </valList>
+            </attDef>
+          </attList>
         </elementSpec>
         
         
@@ -209,6 +247,17 @@
         <elementSpec ident="rest" module="MEI.shared" mode="delete"/>
         <elementSpec ident="barLine" module="MEI.shared" mode="delete"/>
         <elementSpec ident="keySig" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="dir" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="dot" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="dynam" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="ending" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="key" module="MEI.header" mode="delete"/>
+        <elementSpec ident="keyAccid" module="MEI.header" mode="delete"/>
+        <elementSpec ident="meter" module="MEI.header" mode="delete"/>
+        <elementSpec ident="part" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="accid" module="MEI.shared" mode="delete"/>
+        <elementSpec ident="artic" module="MEI.shared" mode="delete"/>
+        
         
         <!-- Remove dur attribute -->
         <classSpec ident="att.duration.musical" module="MEI.shared" type="atts" mode="delete"/>
@@ -218,6 +267,18 @@
         <classSpec ident="att.keySigDefault.log" module="MEI.shared" type="atts" mode="delete"/>
         <classSpec ident="att.keyModeDefault.log" module="MEI.shared" type="atts" mode="delete"/>
 
+        <!--Change clef options-->
+        <macroSpec ident="data.CLEFSHAPE" module="MEI" type="dt" mode="replace">
+          <desc>Limited clef values for neume notation</desc>
+          <content>
+            <rng:choice>
+              <rng:value>F</rng:value>
+              <rng:value>C</rng:value>
+            </rng:choice>
+          </content>
+        </macroSpec>
+        
+        
         <!--Add neume names-->
         <macroSpec ident="data.NEUMENAMES" module="MEI.newmes" type="dt" mode="add">
           <desc>Possible neume names</desc>
