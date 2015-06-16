@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="2013" xmlns="http://www.music-encoding.org/ns/mei" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Neume-test</title>
+            </titleStmt>
+            <pubStmt>
+                <respStmt>
+                    <corpName>DDMAL</corpName>
+                </respStmt>
+            </pubStmt>
+        </fileDesc>
+    </meiHead>
+<music>
+    <body>
+        <mdiv>
+            <score>
+                <scoreDef>
+                    <staffGrp>
+                        <staffDef clef.shape="C" clef.line="4" lines="4" n="1" xml:id="sd1"/>
+                    </staffGrp>
+                </scoreDef>
+                <section>
+                    <staff>
+                        <layer>
+                            <syllable syl="Ky" pos="i">
+                                <neume name="pes">
+                                    <note pname="a"/>
+                                    <note pname="b" accid="f"/>
+                                </neume>
+                            </syllable>
+                            <syllable syl="ri" pos="m">
+                                <neume name="clivis">
+                                    <note pname="a"/>
+                                    <note pname="g"/>
+                                </neume>
+                            </syllable>
+                            <syllable syl="e" pos="t">
+                                <neume name="clivis" artic="mora">
+                                    <note pname="a"/>
+                                    <note pname="d"/>
+                                </neume>
+                            </syllable>
+                            <division type="small"/>
+                            <syllable syl="e" pos="i">
+                                <neume name="scandicus">
+                                    <note pname="f"/>
+                                    <note pname="g"/>
+                                    <note pname="a"/>
+                                </neume>
+                                <neume name="climacus">
+                                    <note pname="b" accid="f"/>
+                                    <note pname="a"/>
+                                    <note pname="g"/>
+                                </neume>
+                                <neume name="climacus">
+                                    <note pname="f"/>
+                                    <note pname="e"/>
+                                    <note pname="d"/>
+                                </neume>
+                            </syllable>
+                            <syllable syl="le" pos="m">
+                                <neume name="punctum">
+                                    <note pname="c"/>
+                                </neume>
+                            </syllable>
+                            <syllable syl="i" pos="m">
+                                <neume name="punctum">
+                                    <note pname="d"/>
+                                </neume>
+                            </syllable>
+                            <syllable syl="son" pos="t">
+                                <neume name="punctum" artic="mora">
+                                    <note pname="d"/>
+                                </neume>
+                            </syllable>
+                        </layer>
+                    </staff>
+                </section>
+            </score>
+        </mdiv>
+    </body>
+</music>
+</mei>
+
