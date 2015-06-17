@@ -3,10 +3,11 @@
     <meiHead>
         <fileDesc>
             <titleStmt>
-                <title>Neume-test</title>
+                <title>Iubilate deo universa terra</title>
             </titleStmt>
             <pubStmt>
                 <respStmt>
+                    <persName xml:id="mbb">Marina Borsodi-Benson</persName>
                     <corpName>DDMAL</corpName>
                 </respStmt>
             </pubStmt>
@@ -16,15 +17,10 @@
     <body>
         <mdiv>
             <score>
-                <scoreDef>
-                    <staffGrp>
-                        <staffDef clef.shape="C" clef.line="4" lines="4" n="1" xml:id="sd1"/>
-                    </staffGrp>
-                </scoreDef>
                 <section>
                     <staff>
                         <layer>
-                            <syllable syl="Iu" pos="i" type="initial">
+                            <syllable syl="Iu" pos="i" letter="initial">
                                 <neume contour="N">
                                     <note/>
                                 </neume>

@@ -3,10 +3,11 @@
     <meiHead>
         <fileDesc>
             <titleStmt>
-                <title>Neume-test</title>
+                <title>Ecce nomen domini</title>
             </titleStmt>
             <pubStmt>
                 <respStmt>
+                    <persName xml:id="mbb">Marina Borsodi-Benson</persName>
                     <corpName>DDMAL</corpName>
                 </respStmt>
             </pubStmt>
@@ -31,7 +32,7 @@
                             </syllable>
                             <syllable syl="ce" pos="t">
                                 <neume contour="NL">
-                                    <note pname="d"  oct="3" connection="n"/>
+                                    <note pname="d" oct="3" connection="n"/>
                                     <note pname="c" oct="3"/>
                                 </neume>
                             </syllable>
@@ -52,7 +53,7 @@
                             </syllable>
                             <syllable syl="mi" pos="m">
                                 <neume contour="NH">
-                                    <note pname="g"  oct="3" connection="n"/>
+                                    <note pname="g" oct="3" connection="n"/>
                                     <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
@@ -63,21 +64,22 @@
                             </syllable>
                             <syllable syl="ve" pos="i">
                                 <neume contour="NHLHHL">
-                                    <note pname="a"  oct="3" connection="leap"/>
-                                    <note pname="c"  oct="4" connection="line"/>
-                                    <note pname="b"  oct="3" connection="n"/>
-                                    <note pname="c"  oct="4" connection="n"/>
-                                    <note pname="d"  oct="4" connection="n"/>
+                                    <note pname="a" oct="3" connection="n"/>
+                                    <note pname="c" oct="4" connection="b"/>
+                                    <note pname="b" oct="3" connection="n"/>
+                                    <note pname="c" oct="4" connection="n"/>
+                                    <note pname="d" oct="4" connection="n"/>
                                     <note pname="c" oct="4"/>
                                 </neume>
                             </syllable>
                             <syllable syl="nit" pos="t">
                                 <neume contour="NHL">
-                                    <note pname="a" oct="3"/>
-                                    <note pname="b" oct="3"/>
+                                    <note pname="a" oct="3" connection="n"/>
+                                    <note pname="b" oct="3" connection="n"/>
                                     <note pname="a" oct="3"/>
                                 </neume>
                             </syllable>
+                            <custos pname="a" oct="3"/>
                             <syllable syl="de">
                                 <neume contour="N">
                                     <note pname="a" oct="3"/>
@@ -91,17 +93,17 @@
                             </syllable>
                             <syllable syl="gin" pos="m">
                                 <neume contour="NHHLNL">
-                                    <note pname="g"  oct="3" connection="n"/>
-                                    <note pname="a"  oct="3" connection="n"/>
-                                    <note pname="b"  oct="3" connection="n"/>
-                                    <note pname="a"  oct="3" connection="n"/>
-                                    <note pname="a"  oct="3" connection="n"/>
+                                    <note pname="g" oct="3" connection="n"/>
+                                    <note pname="a" oct="3" connection="n"/>
+                                    <note pname="b" oct="3" connection="n"/>
+                                    <note pname="a" oct="3" connection="n" form="rhombic"/>
+                                    <note pname="a" oct="3" connection="n"/>
                                     <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="quo" pos="t">
                                 <neume contour="NL">
-                                    <note pname="a"  oct="3" connection="n"/>
+                                    <note pname="a" oct="3" connection="n"/>
                                     <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
@@ -127,15 +129,15 @@
                             </syllable>
                             <syllable syl="e" pos="i">
                                 <neume contour="NL">
-                                    <note pname="a" connection="n"/>
+                                    <note pname="a" oct="3" connection="n"/>
                                     <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
-                            <custos pname="f"/>
+                            <custos pname="f" oct="3"/>
                             <sb/>
                             <syllable syl="ius" pos="t">
                                 <neume contour="NH">
-                                    <note pname="f" connection="n"/>
+                                    <note pname="f" oct="3" connection="n"/>
                                     <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
@@ -151,8 +153,8 @@
                             </syllable>
                             <syllable syl="or" pos="i">
                                 <neume contour="NH">
-                                    <note pname="e"  oct="3" connection="leap"/>
-                                    <note pname="g"/>
+                                    <note pname="e" oct="3" connection="n"/>
+                                    <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="bem" pos="t">
@@ -162,7 +164,7 @@
                             </syllable>
                             <syllable syl="ter" pos="i">
                                 <neume contour="NL">
-                                    <note pname="f"  oct="3" connection="n"/>
+                                    <note pname="f" oct="3" connection="n"/>
                                     <note pname="e" oct="3"/>
                                 </neume>
                             </syllable>

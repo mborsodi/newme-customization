@@ -129,9 +129,18 @@
               <desc>
                 connects
               </desc>
+              <valList type="closed">
+                <valItem ident="n"/><desc>no particular connection</desc>
+                <valItem ident="l"/><desc>line</desc>
+                <valItem ident="b"/><desc>beam-like connection</desc>
+                <valItem ident="ll"/><desc>loops</desc>
+                <valItem ident="r"/><desc>repeated note</desc>
+              </valList>
+            </attDef>
+            <attDef ident="form" usage="rec">
               <valList type="semi">
-                <valItem ident="nl"/>
-                <valItem ident="l"/>
+                <valItem ident="quilisma"/>
+                <valItem ident="rhombic"/>
               </valList>
             </attDef>
           </attList>
@@ -174,7 +183,7 @@
                 <valItem ident="t"/>
               </valList>
             </attDef>
-            <attDef ident="type" usage="opt">
+            <attDef ident="letter" usage="opt">
               <valList type="semi">
                 <valItem ident="initial"/>
               </valList>

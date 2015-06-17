@@ -3,10 +3,11 @@
     <meiHead>
         <fileDesc>
             <titleStmt>
-                <title>Neume-test</title>
+                <title>Kyrie</title>
             </titleStmt>
             <pubStmt>
                 <respStmt>
+                    <persName xml:id="mbb">Marina Borsodi-Benson</persName>
                     <corpName>DDMAL</corpName>
                 </respStmt>
             </pubStmt>
@@ -26,43 +27,41 @@
                         <layer>
                             <syllable syl="Ky" pos="i" type="initial">
                                 <neume name="pes">
-                                    <note pname="a" oct="3"/>
+                                    <note pname="a" oct="3" connection="l"/>
                                     <note pname="b"  oct="3" accid="f"/>
                                 </neume>
                             </syllable>
                             <syllable syl="ri" pos="m">
                                 <neume name="clivis">
-                                    <note pname="a" oct="3"/>
+                                    <note pname="a" oct="3" connection="l"/>
                                     <note pname="g" oct="3"/>
                                 </neume>
                             </syllable>
                             <syllable syl="e" pos="t">
                                 <neume name="clivis" artic="mora">
-                                    <note pname="a" oct="3"/>
+                                    <note pname="a" oct="3" connection="l"/>
                                     <note pname="d" oct="3"/>
                                 </neume>
                             </syllable>
                             <division type="small"/>
                             <syllable syl="e" pos="i">
-                                <neume name="scandicus">
-                                    <note pname="f" oct="3"/>
-                                    <note pname="g" oct="3"/>
-                                    <note pname="a" oct="3"/>
+                                <neume contour="NHHHLL">
+                                    <note pname="f" oct="3" connection="n"/>
+                                    <note pname="g" oct="3" connection="l"/>
+                                    <note pname="a" oct="3" connection="n"/>
+                                    <note pname="b" oct="3" accid="f" connection="n"/>
+                                    <note pname="a" oct="3" connection="n" form="rhombic"/>
+                                    <note pname="g" oct="3" form="rhombic"/>
                                 </neume>
                                 <neume name="climacus">
-                                    <note pname="b"  oct="3" accid="f"/>
-                                    <note pname="a" oct="3"/>
-                                    <note pname="g" oct="3"/>
-                                </neume>
-                                <neume name="climacus">
-                                    <note pname="f" oct="3"/>
-                                    <note pname="e" oct="3"/>
-                                    <note pname="d" oct="3"/>
+                                    <note pname="f" oct="3" connection="n"/>
+                                    <note pname="e" oct="3" connection="n" form="rhombic"/>
+                                    <note pname="d" oct="3" form="rhombic"/>
                                 </neume>
                             </syllable>
                             <syllable syl="le" pos="m">
                                 <neume name="punctum">
-                                    <note pname="c" oct="3"/>
+                                    <note pname="c" oct="3" artic="episema-below"/>
                                 </neume>
                             </syllable>
                             <syllable syl="i" pos="m">
